@@ -28,6 +28,24 @@ Specific strategies were implemented to ensure test stability in modern Android 
 The video recording demonstrating the successful execution of the automated test is located in the root directory of the project:
 - **File Name**: `Screen_recording_20260426_012846.webm`
 
+##  Execution Instructions
+
+###  Option 1: Execution with Gradle (Standard)
+To run the instrumentation tests using Gradle, ensure you have an Android emulator or physical device connected and execute the following command in the terminal:
+
+```bash
+./gradlew connectedAndroidTest
+```
+After the execution finishes, you can find the detailed HTML report at:
+app/build/reports/androidTests/connected/index.html
+
+## Option 2: Execution with Bazel (Advanced)
+If you prefer using Bazel, use the following command to trigger the instrumentation test:
+```bash
+bazel test //app/src/androidTest:checkout_e2e_test
+```
+Note: This requires the rules_android dependency to be correctly resolved in your WORKSPACE file.
+
 ##  Repository Structure
 ```text
 src/androidTest/java/com.example.demo_swag_victorperez/
