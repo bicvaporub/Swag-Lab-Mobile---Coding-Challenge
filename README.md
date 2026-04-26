@@ -39,7 +39,7 @@ To run the instrumentation tests using Gradle, ensure you have an Android emulat
 After the execution finishes, you can find the detailed HTML report at:
 app/build/reports/androidTests/connected/index.html
 
-## Option 2: Execution with Bazel (Advanced)
+### Option 2: Execution with Bazel (Advanced)
 If you prefer using Bazel, use the following command to trigger the instrumentation test:
 ```bash
 bazel test //app/src/androidTest:checkout_e2e_test
