@@ -24,6 +24,10 @@ Specific strategies were implemented to ensure test stability in modern Android 
 - **Dynamic Scrolling**: Optimized `device.swipe()` parameters to accurately locate elements outside the initial viewport (FINISH button).
 - **UI Synchronization**: Utilized explicit waits with `waitForExists()` to handle screen transitions and App response times effectively.
 
+##  Project Demo (Recording)
+The video recording demonstrating the successful execution of the automated test is located in the root directory of the project:
+- **File Name**: `Screen_recording_20260426_012846.webm`
+
 ##  Repository Structure
 ```text
 src/androidTest/java/com.example.demo_swag_victorperez/
